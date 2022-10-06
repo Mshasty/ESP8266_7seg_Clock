@@ -90,14 +90,15 @@ void setup() {
   }
 
   //Display <Connect> Once Connected to AP
-  lc.setRow(0, 7, 0x4e);
-  lc.setRow(0, 6, 0x1d);
-  lc.setRow(0, 5, 0x15);
-  lc.setRow(0, 4, 0x15);
-  lc.setRow(0, 3, 0x6f);
-  lc.setRow(0, 2, 0x0d);
-  lc.setRow(0, 1, 0x0f);
-  delay(3000);
+  // lc.setRow(0, 7, 0x4e);
+  // lc.setRow(0, 6, 0x1d);
+  // lc.setRow(0, 5, 0x15);
+  // lc.setRow(0, 4, 0x15);
+  // lc.setRow(0, 3, 0x6f);
+  // lc.setRow(0, 2, 0x0d);
+  // lc.setRow(0, 1, 0x0f);
+  // delay(3000);
+  ShowConnect();
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
   }

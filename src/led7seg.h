@@ -12,7 +12,7 @@ int inPin = 3;
 // GPIO 13 = DIN pin, GPIO 12 = CLK pin, GPIO 14 = LOAD pin. 
 //For ESP-12E Tested GPIO Values
 // GPIO 13 = DIN pin, GPIO 14 = CLK pin, GPIO 15 = LOAD pin. 
-LedControl lc = LedControl(13, 14, 15, 1);
+LedControl lc=LedControl(13, 14, 15, 1);
 
 void digitalClockDisplay() {
   tmElements_t tm;
@@ -60,5 +60,5 @@ void ShowConnect() {
   lc.setRow(0, 3, 0x6f);
   lc.setRow(0, 2, 0x0d);
   lc.setRow(0, 1, 0x0f);
-  delay(3000);  
+  delay(1500);  
 }
